@@ -7,7 +7,7 @@
           <form>
             <div>
               <label class="black-text">Valor Total</label>
-              <input type="text" readonly>
+              <input type="text" readonly [value]="pegaValor">
             </div>
           </form>
         </div>
@@ -16,13 +16,28 @@
   </div>
   <div class="row">
     <div class="col s4">
-      <button class="btn btn-block waves-effect waves-light">Lanche R$ 5,00</button>
+      <button
+        class="btn btn-block waves-effect waves-light blue-grey darken-3"
+        (click)="calcula(5)"
+        >
+        Lanche R$ 5,00
+        </button>
     </div>
     <div class="col s4">
-      <button class="btn btn-block waves-effect waves-light">Bebida R$4,00</button>
+      <button
+        class="btn btn-block waves-effect waves-light blue-grey darken-3"
+        (click)="calcula(4)"
+        >
+        Bebida R$4,00
+        </button>
     </div>
     <div class="col s4">
-      <button class="btn btn-block waves-effect waves-light">Sobremesa R$3,00</button>
+      <button
+        class="btn btn-block waves-effect waves-light blue-grey darken-3"
+        (click)="calcula(3)"
+        >
+        Sobremesa R$3,00
+        </button>
     </div>
   </div>
 </div>
