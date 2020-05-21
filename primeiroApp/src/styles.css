@@ -4,3 +4,24 @@
     min-height: 50px;
     line-height: 20px;
 }
+
+.tabs#menu .tab a{
+  color: #607d8b;
+}
+
+.tabs#menu .tab a:hover {
+  color: #263238;
+}
+
+
+.tabs#menu .tab a.active {
+  color: #263238;
+}
+
+.tabs#menu .tab a:focus, .tabs#menu .tab a:focus.active {
+    background-color: #cfd8dc;
+}
+
+.tabs#menu .indicator {
+  background-color:#263238;
+}
